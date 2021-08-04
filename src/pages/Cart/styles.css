@@ -4,7 +4,7 @@
 
 .orders {
   margin: 2rem 0 0 0;
-  min-height: calc(100vh - 15rem);
+  min-height: calc(130vh - 15rem);
 }
 
 .orders-heading,
@@ -21,4 +21,24 @@
   border-top: 2px solid #000;
   margin-left: auto;
   margin-top: 3rem;
+}
+
+.checkout-btn {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  cursor: pointer;
+  margin-top: 2.5rem;
+  float: right;
 }

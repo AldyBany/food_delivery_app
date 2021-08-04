@@ -6,6 +6,7 @@ import Footer from '../../components/common/Footer';
 import Logo from '../../components/common/Logo';
 import Menu from '../../components/common/Menu';
 import MenuItem from '../../components/common/Menu/MenuItem';
+import {Link} from 'react-router-dom'
 import {
   selectCartItems,
   selectCartItemsCount,
@@ -28,9 +29,11 @@ const Cart = ({ cartCount, cartList, cartTotal }) => {
             <Menu list={cartList} />
           </div>
           <h3 className='orders-total'>Your Total ${cartTotal}</h3>
+          <Link to="/checkout" className="checkout-btn">
+            Checkout <i className='fas fa-long-arrow-alt-right'></i>
+          </Link>
         </div>
       )}
-      <Footer />
     </>
   );
 };

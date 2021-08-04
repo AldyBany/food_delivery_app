@@ -1,5 +1,7 @@
 .header-content_logo {
   min-width: fit-content;
+  text-decoration: none;
+  color: #000;
 }
 .header-content_logo img {
   width: 1.5rem;

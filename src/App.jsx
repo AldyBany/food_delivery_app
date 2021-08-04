@@ -8,6 +8,8 @@ import {
 } from 'react-router-dom';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
+import Checkout from './pages/Chekout';
+import Footer from './components/common/Footer/index'
 
 const App = () => {
   return (
@@ -16,8 +18,10 @@ const App = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/cart' component={Cart} />
-          <Redirect to='/' />
+          <Route exact path='/checkout' component={Checkout} />
+          <Redirect to='/'/>
         </Switch>
+        <Footer/>
       </Router>
     </div>
   );
