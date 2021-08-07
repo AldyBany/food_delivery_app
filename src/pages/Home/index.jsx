@@ -32,7 +32,7 @@ const Home = () => {
     
   }
 
-  console.log("My List: ", List)
+  
 
   useEffect(() => {
         applyFilters()
